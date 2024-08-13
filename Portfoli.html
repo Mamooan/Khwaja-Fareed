@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<title>Khwaja Fareed Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    .a {
+        height: 60vh;
+        width: 50%;
+        /* border: 1px solid black; */
+        position: relative;
+        margin: 50px auto;
+        overflow: hidden;
+    }
+
+    .b {
+        height: 100%;
+        width: 800%;
+        /* border: 1px solid black; */
+        position: relative;
+        animation: ma 60s linear infinite;
+
+    }
+
+    @keyframes ma {
+        0% {
+            left: 0%;
+        }
+
+        7.5% {
+            left: 0%;
+        }
+
+        12.5% {
+            left: -100%;
+        }
+
+        20% {
+            left: -100%;
+        }
+
+        25% {
+            left: -200%;
+        }
+
+        32.5% {
+            left: -200%;
+        }
+
+        37.5% {
+            left: -300%;
+        }
+
+        45% {
+            left: -300%;
+        }
+
+        50% {
+            left: -400%;
+        }
+
+        57.5% {
+            left: -400%;
+        }
+
+        62.5% {
+            left: -500%;
+        }
+
+        70% {
+            left: -500%;
+        }
+
+        75% {
+            left: -600%;
+        }
+
+        82.5% {
+            left: -600%;
+        }
+
+        87.5% {
+            left: -700%;
+        }
+
+        95% {
+            left: -700%;
+        }
+    }
+
+    .pic {
+        position: relative;
+        height: 100%;
+        width: 12.49%;
+        /* border: 1px solid red; */
+        float: left;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+
+        .a {
+            height: 60vh;
+            width: 70%;
+            /* border: 1px solid black; */
+            position: relative;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+    }
+</style>
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="https://scontent.flhe7-2.fna.fbcdn.net/v/t31.18172-8/1014540_284466015032013_1513462148_o.jpg?_nc_cat=103&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=7Yvybr4pfjgQ7kNvgHcM6JK&_nc_ht=scontent.flhe7-2.fna&oh=00_AYDr_TuubZN4m83JoqjwyFYXpoD5iJ6DqDoqGf3Ia-fgMw&oe=66C98816"
+            style="width:100%">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>ABOUT</p>
+        </a>
+        <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>PHOTOS</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACT</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+            <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Khwaja Fareed,</h1>
+            <p>Photographer and video editor.</p>
+            <img src="./image/WhatsApp Image 2024-08-01 at 17.46.02_e4c71ad8.jpg" alt="boy" class="w3-image" width="992"
+                height="908">
+        </header>
+
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+            <h2 class="w3-text-light-grey">Khwaja Fareed</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <p>Some text about me. I am a dynamic individual with a multifaceted career, owning a shop while excelling
+                in photography and web video editing. Your expertise spans creating stunning photos and expertly editing
+                them, ensuring every image captures the perfect moment. In addition, your skills in web video editing
+                allow you to produce high-quality content, blending visual storytelling with technical precision.
+                Balancing these roles, you seamlessly merge artistic vision with entrepreneurial spirit, making a
+                significant impact in each field you engage with.I have 20 Years experience in this feald and i do many
+                kind of online or physical work.
+            </p>
+            <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+            <p class="w3-wide">Photography</p>
+            <div class="w3-white">
+                <div class="w3-dark-grey" style="height:28px;width:97%;text-align: center;">97</div>
+            </div>
+            <p class="w3-wide">photoeditor and vedioeditor</p>
+            <div class="w3-white">
+                <div class="w3-dark-grey" style="height:28px;width:90%;text-align: center;">90</div>
+            </div>
+            <p class="w3-wide">Photoshop</p>
+            <div class="w3-white">
+                <div class="w3-dark-grey" style="height:28px;width:85%;text-align: center;">85</div>
+            </div><br>
+
+            <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+                <div class="w3-quarter w3-section">
+                    <span class="w3-xlarge">0</span><br>
+                    Partners
+                </div>
+                <div class="w3-quarter w3-section">
+                    <span class="w3-xlarge">100+</span><br>
+                    Projects Done
+                </div>
+                <div class="w3-quarter w3-section">
+                    <span class="w3-xlarge">89+</span><br>
+                    Happy Clients
+                </div>
+                <div class="w3-quarter w3-section">
+                    <span class="w3-xlarge">150+</span><br>
+                    Meetings
+                </div>
+            </div>
+            <a href="file:///C:/Users/stady/OneDrive/Desktop/Amadcv.pdf"
+                download target="_blank">
+                <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                    <i class="fa fa-download"></i> Download Resume
+                </button>
+            </a>
+            <!-- Grid for pricing tables -->
+            <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half w3-margin-bottom">
+                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+                        <li class="w3-padding-16">video editor</li>
+                        <li class="w3-padding-16">Photography</li>
+                        <li class="w3-padding-16">5GB Storage</li>
+                        <li class="w3-padding-16">Mail Support</li>
+                        <li class="w3-padding-16">
+                            <h2>$ 10</h2>
+                            <span class="w3-opacity">per month</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-half">
+                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+                        <li class="w3-padding-16">video editor</li>
+                        <li class="w3-padding-16">Photography</li>
+                        <li class="w3-padding-16">50GB Storage</li>
+                        <li class="w3-padding-16">Endless Support</li>
+                        <li class="w3-padding-16">
+                            <h2>$ 25</h2>
+                            <span class="w3-opacity">per month</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Grid/Pricing tables -->
+            </div>
+
+            <!-- Testimonials -->
+            <h3 class="w3-padding-24 w3-text-light-grey">My Videos</h3>
+            <div class="a">
+                <div class="b">
+                    <video controls muted class="pic">
+                        <source src="./Video/2792370-hd_1280_720_30fps.mp4">
+                    </video>
+                    <video controls muted class="pic">
+                        <source src="./Video/7649288-hd_1920_1080_30fps.mp4">
+                    </video>
+                    <video controls muted class="pic">
+                        <source src="./Video/856309-hd_1920_1080_30fps.mp4">
+                    </video>
+                    <video controls muted class="pic">
+                        <source src="./Video/2048452-hd_1920_1080_30fps.mp4">
+                    </video>
+                    <video controls muted class="pic">
+                        <source src="./Video/3122106-hd_1280_720_25fps.mp4">
+                    </video>
+                    <video controls muted class="pic">
+                        <source src="./Video/854769-hd_1280_720_50fps.mp4">
+                    </video>
+                    <video controls muted class="pic">
+                        <source src="./Video/4286576-hd_1280_720_25fps.mp4">
+                    </video>
+                    <video controls muted class="pic">
+                        <source src="./Video/855431-hd_1920_1080_24fps.mp4">
+                    </video>
+                </div>
+            </div>
+            <!-- End About Section -->
+        </div>
+
+        <!-- Portfolio Section -->
+        <div class="w3-padding-64 w3-content" id="photos">
+            <h2 class="w3-text-light-grey">My Photos</h2>
+            <hr style="width:200px" class="w3-opacity">
+
+            <!-- Grid for photos -->
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half">
+                    <img src="https://www.brides.com/thmb/TtxC9Ncjr7Cno7HqT5Z_f8PHYDU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/must-take-wedding-photos-bride-groom-walk-clary-prfeiffer-photography-0723-primary-b4221bcb1a2b43e6b0820a8c3e3bce52.jpg"
+                        style="width:100%">
+                    <img src="https://img.freepik.com/premium-photo/wedding-ceremony-area-arch-chairs-decor_419896-1969.jpg?w=360"
+                        style="width:100%">
+                    <img src="https://img.freepik.com/premium-photo/lake-bled-alpine-mountains-autumn-blue-sky_419896-86.jpg?w=996"
+                        style="width:100%">
+                </div>
+
+                <div class="w3-half">
+                    <img src="https://as2.ftcdn.net/v2/jpg/01/87/09/45/1000_F_187094556_saxGxf4gQwb347WPkZEqeIFue6qAxPHf.jpg"
+                        style="width:100%">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
+                        style="width:100%">
+                    <img src="./image/vecteezy_beautiful-waterfall-flowers-water-nature-waterfall-hd_32242170.jpg"
+                        style="width:100%">
+                    <img src="https://st.depositphotos.com/1006065/2004/i/600/depositphotos_20041987-stock-photo-sunset-beach-this-photo-made.jpg"
+                        style="width:100%">
+                </div>
+                <!-- End photo grid -->
+            </div>
+            <!-- End Portfolio Section -->
+        </div>
+
+        <!-- Contact Section -->
+        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+            <h2 class="w3-text-light-grey">Contact Me</h2>
+            <hr style="width:200px" class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Located:<a
+                        href="https://www.google.com/maps/place/Khawaja+Stationary/@31.5698608,74.2937036,17z/data=!4m15!1m8!3m7!1s0x39191d9156fea795:0xb9b359969b6a6cf4!2sKhawaja+Stationary!8m2!3d31.5698608!4d74.2962785!10e1!16s%2Fg%2F11h5rx2k47!3m5!1s0x39191d9156fea795:0xb9b359969b6a6cf4!8m2!3d31.5698608!4d74.2962785!16s%2Fg%2F11h5rx2k47?entry=ttu"
+                        target="_blank" class="w3-hover-text-green"> H79W+WGR, Sant Nagar St Nagar, Lahore, Punjab
+                        54000, Pakistan</a></p>
+                <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 03334284112</p>
+                <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com
+                </p>
+            </div><br>
+            <p>Let's get in touch. Send me a message:</p>
+
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </p>
+            </form>
+            <!-- End Contact Section -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+</body>
+
+</html>
